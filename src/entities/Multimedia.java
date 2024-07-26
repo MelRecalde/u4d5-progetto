@@ -4,12 +4,12 @@ public class Multimedia {
     // attributi
     public String title;
     private int duration;
-    private int volume;
+    private String volume;
     private String brightness;
 
     public Multimedia(String title) {
         this.title = title;
-        this.volume = 0;
+        this.volume = "";
         this.brightness = "";
         this.duration = 0;
     }
