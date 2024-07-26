@@ -1,5 +1,6 @@
 import entities.Audio;
 import entities.Image;
+import entities.Multimedia;
 import entities.Video;
 
 import java.util.Scanner;
@@ -12,11 +13,15 @@ public class Main {
         Audio audio = new Audio("Audio", 5, 1);
 
 
+        Multimedia[] multimedia = new Multimedia[5];
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Hi! What kind of multimedia you want? Enter 1 for Image , 2 for Video , 3 for Audio");
+
         while (true) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Hi! What kind of multimedia you want? Enter 1 for Image , 2 for Video , 3 for Audio");
             int answer = scanner.nextInt();
             if (answer == 0) break;
+
             switch (answer) {
                 case 1:
                     System.out.println(image);
@@ -28,9 +33,9 @@ public class Main {
                     System.out.println(audio);
                     break;
                 default:
-                    System.out.println("enter 1 for Image, 2 for Video, 3 for Audio");
-
+                    System.out.println("OPTIONS: 1 for Image, 2 for Video, 3 for Audio");
             }
+            System.out.println("please Enter 1 for Image , 2 for Video , 3 for Audio");
         }
 
 

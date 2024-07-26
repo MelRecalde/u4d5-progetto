@@ -1,5 +1,7 @@
 package entities;
 
+import java.util.Scanner;
+
 public abstract class Multimedia {
     // attributi
     public String title;
@@ -26,6 +28,10 @@ public abstract class Multimedia {
     }
 
     public void setTitle(String title) {
+        String t = "";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a title ");
         this.title = title;
+
     }
 }
