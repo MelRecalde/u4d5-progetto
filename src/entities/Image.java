@@ -4,9 +4,9 @@ import interfaces.Brightness;
 
 public class Image extends Multimedia implements Brightness {
     // ATTRIBUTI
-    private String brightness;
+    private int brightness;
 
-    public Image(String title, String brightness) {
+    public Image(String title, int brightness) {
         super(title);
         this.brightness = brightness;
     }
@@ -16,11 +16,11 @@ public class Image extends Multimedia implements Brightness {
         System.out.println(getTitle() + light);
     }
 
-    public String getBrightness() {
+    public int getBrightness() {
         return brightness;
     }
 
-    public void setBrightness(String brightness) {
+    public void setBrightness(int brightness) {
         this.brightness = brightness;
     }
 

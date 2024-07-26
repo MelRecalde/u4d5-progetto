@@ -1,16 +1,16 @@
 package entities;
 
-public class Multimedia {
+public abstract class Multimedia {
     // attributi
     public String title;
     private int duration;
     private String volume;
-    private String brightness;
+    private int brightness;
 
     public Multimedia(String title) {
         this.title = title;
         this.volume = "";
-        this.brightness = "";
+        this.brightness = 0;
         this.duration = 0;
     }
 
